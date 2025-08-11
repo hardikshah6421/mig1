@@ -1,0 +1,22 @@
+stages:
+  - build
+  - test
+  - deploy
+
+# Job for the build stage
+build_job:
+  stage: build
+  script:
+    - echo "Building the new pipeline..."
+
+# Job for the test stage
+test_job:
+  stage: test
+  script:
+    - echo "Running tests on pipeline..."
+
+# Job for the deploy stage
+deploy_job:
+  stage: deploy
+  script:
+    - echo "Deploying the project pipeline..."
